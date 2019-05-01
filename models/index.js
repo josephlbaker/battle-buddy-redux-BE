@@ -6,9 +6,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/battle-buddy-re
   { useNewUrlParser: true })
 
 module.exports = {
-  User: require("./user"),
-  Post: require("./post"),
-  Event: require("./event"),
-  Comment: require("./comment"),
-  Like: require("./like")
+  User: require("./User"),
+  Post: require("./Post"),
+  Event: require("./Event"),
+  Comment: require("./Comment"),
+  Like: require("./Like")
 };
