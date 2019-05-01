@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 // mongoose.Promise = Promise
 
-mongoose.connect('mongodb://localhost/capstone',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/battle-buddy-redux',
   { useNewUrlParser: true })
 
 module.exports = {
